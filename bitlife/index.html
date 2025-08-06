@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play BitLife Unblocked - the ultimate life simulation game. Make choices, build your legacy, and experience different life paths in this addictive text-based RPG. Perfect for school Chromebooks and mobile devices.">
+    <meta name="keywords" content="bitlife unblocked, bitlife game, life simulator game, text-based rpg, school game unblocked, bitlife github, bitlife unblocked at school, bitlife game online, best unblocked games">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="BitLife Unblocked">
+    <meta name="theme-color" content="#4CAF50">
+    <meta property="og:title" content="BitLife Unblocked">
+    <meta property="og:description" content="Play the best unblocked version of BitLife - make life choices and build your legacy in this addictive text-based RPG. No downloads, no restrictions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://1v1lol-unblocked.bitbucket.io/bitlife">
+    <meta property="og:image" content="https://1v1lol-unblocked.bitbucket.io/images/bitlife.png">
+    <meta property="og:site_name" content="BitLife Unblocked">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BitLife Unblocked | Ultimate Life Simulation Game">
+    <meta name="twitter:description" content="Play the best unblocked version of BitLife - make life choices and build your legacy in this addictive text-based RPG.">
+    <meta name="twitter:image" content="https://1v1lol-unblocked.bitbucket.io/images/bitlife.png">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="web">
+    <meta name="rating" content="general">
+    <meta name="language" content="en">
+    <link rel="canonical" href="https://1v1lol-unblocked.bitbucket.io/bitlife">
+    <title>BitLife Unblocked</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+     <link rel="stylesheet" href="/style.css">
+
+<link rel="shortcut icon" href="https://1v1lol-unblocked.bitbucket.io/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://1v1lol-unblocked.bitbucket.io/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">1v1.LOL Unblocked</a>
+        </div>
+    </header>
+    
+    <nav class="nav-menu">
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i> Menu
+        </button>
+        <div class="nav-container" id="navContainer">
+            <a href="/all-games" class="nav-item active"><i class="fas fa-gamepad"></i> All Games</a>
+            <a href="/shooting" class="nav-item"><i class="fas fa-crosshairs"></i> Shooting</a>
+            <a href="/racing" class="nav-item"><i class="fas fa-car"></i> Racing</a>
+            <a href="/sports" class="nav-item"><i class="fas fa-basketball-ball"></i> Sports</a>
+            <a href="/puzzle" class="nav-item"><i class="fas fa-puzzle-piece"></i> Puzzle</a>
+            <a href="/adventure" class="nav-item"><i class="fas fa-mountain"></i> Adventure</a>
+            <a href="/action" class="nav-item"><i class="fas fa-running"></i> Action</a>
+            <a href="/strategy" class="nav-item"><i class="fas fa-chess"></i> Strategy</a>
+        </div>
+    </nav>
+
+
+    
+    <div class="container">
+       
+        
+       
+        
+        <div class="game-frame-container">
+            <div class="game-frame-overlay" id="gameOverlay">
+                <img src="../images/bitlife.png" alt="BitLife Game Preview">
+                <button class="btn btn-play" id="playButton">PLAY NOW <i class="fas fa-play"></i></button>
+            </div>
+            <iframe class="game-frame" id="gameFrame" src="about:blank" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <div class="game-controls" id="gameControls">
+            <div class="controls-row">
+                <div class="rating-container">
+                    <div class="rating-header">
+                        <div class="average-rating">4.8</div>
+                        <div>
+                            <div id="rateYo"></div>
+                            <div class="rating-count">Based on <span id="ratingCount">1,245</span> ratings</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fullscreen-container">
+                    <button class="btn-fullscreen" id="fullscreenButton"><i class="fas fa-expand"></i> Fullscreen</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title"><i class="fas fa-info-circle"></i> About BitLife Unblocked</h3>
+            <p>BitLife is a revolutionary text-based life simulation game that puts you in control of a virtual person's entire existence. This unblocked version provides unrestricted access to all gameplay features, allowing you to experience different life paths without limitations. Whether you want to become a doctor, a criminal, a celebrity, or explore alternative lifestyles, BitLife offers endless possibilities.</p>
+            
+            <p>With its simple yet deep decision-making mechanics, BitLife creates an addictive gameplay loop where every choice has consequences. The game's random events and branching narratives ensure each playthrough is unique, offering hundreds of hours of engaging content in this digital choose-your-own-adventure experience.</p>
+        </div>
+        
+       
+        
+        <div class="section">
+            <h3 class="section-title"><i class="fas fa-comments"></i> Player Comments</h3>
+            <div class="comments-section" id="commentsSection">
+                <!-- Comments will be loaded here -->
+            </div>
+            
+            <div class="comment-form">
+                <h4>Leave your comment</h4>
+                <div class="form-group">
+                    <label for="commentName">Name</label>
+                    <input type="text" id="commentName" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="commentText">Comment</label>
+                    <textarea id="commentText" placeholder="Write your comment here..." required></textarea>
+                </div>
+                <button class="submit-btn" id="submitComment">Post Comment</button>
+            </div>
+        </div>
+        
+        <div class="section similar-games">
+            <h3 class="section-title"><i class="fas fa-thumbs-up"></i> Similar Games</h3>
+            <div class="games-grid">
+                <a href="https://1v1lol-unblocked.bitbucket.io/cookie-clicker" class="game-card-link">
+                    <div class="game-card">
+                        <img src="../images/cookie-clicker.png" alt="Cookie Clicker">
+                        <h4 class="game-card-title">Cookie Clicker</h4>
+                    </div>
+                </a>
+                <a href="https://1v1lol-unblocked.bitbucket.io/monkey-mart" class="game-card-link">
+                    <div class="game-card">
+                        <img src="../images/monkey-mart.png" alt="Monkey Mart">
+                        <h4 class="game-card-title">Monkey Mart</h4>
+                    </div>
+                </a>
+                <a href="https://1v1lol-unblocked.bitbucket.io/drift-boss" class="game-card-link">
+                    <div class="game-card">
+                        <img src="../images/drift-boss.png" alt="Drift Boss">
+                        <h4 class="game-card-title">Drift Boss</h4>
+                    </div>
+                </a>
+                <a href="https://1v1lol-unblocked.bitbucket.io/retro-bowl" class="game-card-link">
+                    <div class="game-card">
+                        <img src="../images/retro-bowl.png" alt="Retro Bowl">
+                        <h4 class="game-card-title">Retro Bowl</h4>
+                    </div>
+                </a>
+                <a href="https://1v1lol-unblocked.bitbucket.io/moto-x3m" class="game-card-link">
+                    <div class="game-card">
+                        <img src="../images/moto-x3m.png" alt="Moto X3M">
+                        <h4 class="game-card-title">Moto X3M</h4>
+                    </div>
+                </a>
+                <a href="https://1v1lol-unblocked.bitbucket.io/basket-bros" class="game-card-link">
+                    <div class="game-card">
+                        <img src="../images/basket-bros.png" alt="Basket Bros">
+                        <h4 class="game-card-title">Basket Bros</h4>
+                    </div>
+                </a>
+                <a href="https://1v1lol-unblocked.bitbucket.io/drift-hunters" class="game-card-link">
+                    <div class="game-card">
+                        <img src="../images/drift-hunters.png" alt="Drift Hunters">
+                        <h4 class="game-card-title">Drift Hunters</h4>
+                    </div>
+                </a>
+                <a href="https://1v1lol-unblocked.bitbucket.io/flappy-bird" class="game-card-link">
+                    <div class="game-card">
+                        <img src="../images/flappy-bird.png" alt="Flappy Bird">
+                        <h4 class="game-card-title">Flappy Bird</h4>
+                    </div>
+                </a>
+                <a href="https://1v1lol-unblocked.bitbucket.io/super-mario-bros" class="game-card-link">
+                    <div class="game-card">
+                        <img src="../images/super-mario-bros.png" alt="Super Mario Bros">
+                        <h4 class="game-card-title">Super Mario Bros</h4>
+                    </div>
+                </a>
+                <a href="https://1v1lol-unblocked.bitbucket.io/geometry-dash" class="game-card-link">
+                    <div class="game-card">
+                        <img src="../images/geometry-dash.png" alt="Geometry Dash">
+                        <h4 class="game-card-title">Geometry Dash</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="/privacy" class="footer-link">Privacy Policy</a>
+                <a href="/terms" class="footer-link">Terms of Service</a>
+                <a href="/dmca" class="footer-link">DMCA</a>
+                <a href="/contact" class="footer-link">Contact</a>
+            </div>
+            <p class="footer-text">© <span id="currentYear"></span> BitLife Unblocked - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script>
+        // Initialize star rating
+        $(function () {
+            let currentRating = 4.8;
+            let ratingCount = 1245;
+            
+            $("#rateYo").rateYo({
+                rating: currentRating,
+                starWidth: "20px",
+                fullStar: true,
+                onSet: function(rating) {
+                    currentRating = ((currentRating * ratingCount) + rating) / (ratingCount + 1);
+                    currentRating = Math.round(currentRating * 10) / 10;
+                    ratingCount++;
+                    
+                    $(".average-rating").text(currentRating);
+                    $("#ratingCount").text(ratingCount);
+                    
+                    // Save to localStorage
+                    localStorage.setItem('gameRating', currentRating);
+                    localStorage.setItem('ratingCount', ratingCount);
+                    
+                    alert("Thank you for rating the game!");
+                }
+            });
+            
+            // Load from localStorage if available
+            if(localStorage.getItem('gameRating')) {
+                currentRating = parseFloat(localStorage.getItem('gameRating'));
+                ratingCount = parseInt(localStorage.getItem('ratingCount'));
+                
+                $(".average-rating").text(currentRating);
+                $("#ratingCount").text(ratingCount);
+                $("#rateYo").rateYo("rating", currentRating);
+            }
+        });
+        
+        // Game frame activation
+        document.getElementById('playButton').addEventListener('click', function() {
+            // Hide the overlay
+            document.getElementById('gameOverlay').classList.add('hidden');
+            
+            // Load the game iframe
+            document.getElementById('gameFrame').src = 'https://iframe.unblocked-76-games.org/bitlife-main';
+            
+            // Show controls section
+            document.getElementById('gameControls').style.display = 'block';
+            
+            // Focus the iframe for better UX
+            document.getElementById('gameFrame').focus();
+        });
+        
+        // Fullscreen functionality
+        document.getElementById('fullscreenButton').addEventListener('click', function() {
+            const elem = document.getElementById('gameFrame');
+            
+            if (!document.fullscreenElement) {
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.webkitRequestFullscreen) { /* Safari */
+                    elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) { /* IE11 */
+                    elem.msRequestFullscreen();
+                }
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        });
+        
+        // Comment system
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load comments from localStorage
+            loadComments();
+            
+            // Submit comment handler
+            document.getElementById('submitComment').addEventListener('click', function() {
+                const name = document.getElementById('commentName').value.trim();
+                const text = document.getElementById('commentText').value.trim();
+                
+                if (name && text) {
+                    addComment(name, text);
+                    document.getElementById('commentName').value = '';
+                    document.getElementById('commentText').value = '';
+                } else {
+                    alert('Please fill in both name and comment fields.');
+                }
+            });
+            
+            // Set current year in footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            
+            // Mobile menu toggle
+            document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+                document.getElementById('navContainer').classList.toggle('active');
+            });
+        });
+        
+        function addComment(name, text) {
+            const comment = {
+                name: name,
+                text: text,
+                date: new Date().toLocaleDateString()
+            };
+            
+            // Get existing comments
+            let comments = JSON.parse(localStorage.getItem('gameComments') || '[]');
+            
+            // Add new comment
+            comments.unshift(comment); // Add to beginning
+            
+            // Save to localStorage
+            localStorage.setItem('gameComments', JSON.stringify(comments));
+            
+            // Refresh comments display
+            loadComments();
+        }
+        
+        function loadComments() {
+            const commentsSection = document.getElementById('commentsSection');
+            const comments = JSON.parse(localStorage.getItem('gameComments') || '[]');
+            
+            // Clear existing comments
+            commentsSection.innerHTML = '';
+            
+            // Add each comment
+            comments.forEach(comment => {
+                const commentDiv = document.createElement('div');
+                commentDiv.className = 'comment';
+                commentDiv.innerHTML = `
+                    <div class="comment-header">
+                        <div class="comment-author">${comment.name}</div>
+                        <div class="comment-date">${comment.date}</div>
+                    </div>
+                    <div class="comment-text">
+                        ${comment.text}
+                    </div>
+                `;
+                commentsSection.appendChild(commentDiv);
+            });
+            
+            // If no comments, show message
+            if (comments.length === 0) {
+                commentsSection.innerHTML = '<p>No comments yet. Be the first to comment!</p>';
+            }
+        }
+    </script>
+<!--LiveInternet counter--><a href="https://www.liveinternet.ru/click" target="_blank"><img id="licntA6A1" width="0" height="0" style="border:0" title="LiveInternet" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" alt=""></a><script>(function(d,s){d.getElementById("licntA6A1").src=
+"https://counter.yadro.ru/hit?t44.1;r"+escape(d.referrer)+
+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+(document,screen)</script><!--/LiveInternet-->
+</body>
+</html>
