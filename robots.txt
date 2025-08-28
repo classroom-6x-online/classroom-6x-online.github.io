@@ -4,4 +4,5 @@ Disallow: /includes/
 Disallow: /classes/
 Disallow: /admin/
 Disallow: /vendor/
-Sitemap: https://yaw.gg/sitemap.xml
+
+Sitemap: https://classroom-6x-online.github.io/sitemap.xml
