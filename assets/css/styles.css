@@ -147,8 +147,12 @@ header {
   margin-bottom: 20px;
   box-shadow: 0 1px 6px 0 rgb(0 0 0 / 25%);
   border-radius: 5px;
-  
 }
+  .game-item:hover .game-card__title {
+  color: #ff7a21; /* highlight color */
+  transition: color 0.3s ease;
+}
+
 
 .game-link {
   margin-bottom: 0;
@@ -175,16 +179,21 @@ header {
   overflow: hidden;
   text-overflow: ellipsis;
   padding-top: 7px;
+  
 }
 
-.game-card__cover {
+  .game-card__cover {
   width: 100%;
   height: 195px;
   object-fit: cover;
   border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth effect */
 }
-.game-card__cover hover {
-  opacity: 0.7
+
+.game-card__cover:hover {
+  transform: scale(1.05); /* zoom in */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* shadow on hover */
+  cursor: pointer; /* show hand cursor */
 }
 @media (max-width: 1399px) {
   .game-card__cover {
