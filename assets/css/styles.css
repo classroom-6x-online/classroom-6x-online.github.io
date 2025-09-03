@@ -126,7 +126,7 @@ header {
 .title-sub {
   font-weight: 400;
   display: inline-block;
-  color: black;
+  color: #fff;
   text-transform: capitalize;
   padding-left: 15px;
   font-size: 24px;
