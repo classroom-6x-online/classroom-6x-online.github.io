@@ -979,282 +979,50 @@
           <p>Because everything is online, your device stays clean and speedy. Nice and neat.</p>
  
 
-<section id="top-10" class="top10-wrap">
-  <style>
-    /* ---------- Theme (tweak these) ---------- */
-    :root{
-      --bg: #0f1220;              /* page background */
-      --card: #14182a;            /* card base */
-      --card-2: #101427;          /* alt card */
-      --text: #e9efff;            /* main text */
-      --muted: #9fb0d0;           /* secondary text */
-      --accent: #7aa2ff;          /* link accent */
-      --accent-2: #7fffd4;        /* secondary accent */
-      --ring: #3a55ff55;          /* focus/hover ring */
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --radius: 16px;
-    }
-
-    .top10-wrap{
-      --grid: 420px;  /* minimum card width before wrapping */
-      color: var(--text);
-      background:
-        radial-gradient(1200px 600px at 10% -20%, #2b2e52 0%, transparent 60%),
-        radial-gradient(1000px 600px at 110% 10%, #1f2a5a 0%, transparent 60%);
-      border-radius: 20px;
-      padding: clamp(16px, 2.5vw, 32px);
-      margin: 24px auto;
-      box-shadow: var(--shadow);
-    }
-
-    .top10-head{
-      display:flex; align-items:flex-end; gap:12px; margin-bottom:18px;
-      border-bottom:1px solid #233052; padding-bottom:12px;
-    }
-    .top10-head h2{
-      margin:0; font-size: clamp(24px, 3vw, 34px); letter-spacing:.2px;
-      background: linear-gradient(90deg, #a7b4ff 0%, #7fffd4 60%, #fff 100%);
-      -webkit-background-clip:text; background-clip:text; color:transparent;
-    }
-    .top10-head p{ margin:0; color:var(--muted); font-size:14px }
-
-    /* ---------- Cards grid ---------- */
-    .game-grid{
-      display:grid; grid-template-columns: repeat(auto-fit, minmax(var(--grid), 1fr));
-      gap: 14px;
-      counter-reset: game;
-    }
-
-    .game-card{
-      position:relative;
-      padding:18px 18px 16px 18px;
-      background:linear-gradient(180deg, var(--card), var(--card-2));
-      border:1px solid #22304d;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-      overflow:hidden;
-      counter-increment: game;
-      isolation:isolate;
-    }
-    .game-card::before{
-      content: counter(game);
-      position:absolute; top:-18px; right:-6px;
-      font-weight:800; font-size: clamp(56px, 7vw, 86px);
-      line-height:1; opacity:.08; pointer-events:none;
-      background: linear-gradient(180deg, #7fffd4, #7aa2ff);
-      -webkit-background-clip:text; background-clip:text; color:transparent;
-    }
-    .game-card:hover{ transform: translateY(-4px); border-color:#3553ff; box-shadow: 0 16px 40px rgba(45,65,150,.45); }
-    .game-card:focus-within{ outline:2px solid transparent; box-shadow: 0 0 0 6px var(--ring), var(--shadow); }
-
-    .game-title{
-      display:flex; align-items:center; gap:10px; margin:0 0 6px;
-      font-size: clamp(18px, 2.1vw, 22px);
-    }
-    .game-title a{ color:#fff; text-decoration:none; }
-    .game-title a:hover{ text-decoration:underline; text-decoration-thickness:2px; text-underline-offset:3px; }
-
-    .pill{
-      display:inline-flex; align-items:center; gap:6px;
-      font-size:12px; padding:4px 9px; border-radius:999px;
-      background:#0e162c; border:1px solid #2a3a63; color:#cfe2ff;
-    }
-    .pill i{ font-style:normal; opacity:.9 }
-
-    .game-desc{ margin:6px 0 10px; color:var(--muted); }
-
-    .meta{
-      display:grid; gap:6px; margin:0; padding-left:18px;
-    }
-    .meta li{ margin:0; }
-    .meta strong{ color:#e7f0ff }
-
-    /* compact row of quick actions at the bottom */
-    .actions{
-      display:flex; gap:8px; flex-wrap:wrap; margin-top:12px
-    }
-    .btn{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:8px 12px; font-size:14px; border-radius:10px;
-      background:#0f1730; border:1px solid #314170; color:#eaf2ff;
-      text-decoration:none;
-      transition: background .15s ease, transform .15s ease, border-color .15s ease;
-    }
-    .btn:hover{ background:#142048; transform: translateY(-1px); border-color:#4d66ff; }
-    .btn i{ font-style:normal; font-weight:700; font-size:16px }
-    @media (max-width: 560px){
-      .game-grid{ --grid: 100% }
-    }
-  </style>
-
-  <div class="top10-head">
-    <h2>Top 10 Classroom 6x Unblocked Games</h2>
-    <p>Fresh look, same favorites — click any title to play instantly.</p>
-  </div>
-
-  <div class="game-grid">
-    <!-- 1v1.LOL -->
-    <article class="game-card">
-      <h3 class="game-title"><span class="pill"><i>🎯</i> Shooter</span>
-        <a href="https://classroom-6x-online.github.io/game/1v1-lol">1v1.LOL</a>
-      </h3>
-      <p class="game-desc">Fast duels that blend building and shooting—quick rounds, big clutch moments.</p>
-      <ul class="meta">
-        <li><strong>Gameplay:</strong> Throw up ramps/walls to defend, peek, and trade shots in real time.</li>
-        <li><strong>Why it’s fun:</strong> Creative builds + tense aim battles keeps every match fresh.</li>
-        <li><strong>Pro tip:</strong> Drill a 90° ramp + wall pattern; it’ll save you under pressure.</li>
-      </ul>
-      <p class="actions">
-        <a class="btn" href="https://classroom-6x-online.github.io/game/1v1-lol"><i>▶</i> Play now</a>
-        <a class="btn" href="#tips"><i>💡</i> Get tips</a>
-      </p>
-    </article>
-
-    <!-- Eaglercraft -->
-    <article class="game-card">
-      <h3 class="game-title"><span class="pill"><i>🧱</i> Sandbox</span>
-        <a href="https://classroom-6x-online.github.io/game/eaglercraft">Eaglercraft</a>
-      </h3>
-      <p class="game-desc">A blocky world in your browser—build, explore, and survive without downloads.</p>
-      <ul class="meta">
-        <li><strong>Gameplay:</strong> Gather, craft, and create your own base—solo chill or challenge runs.</li>
-        <li><strong>Why it’s fun:</strong> Pure sandbox freedom in Chrome; no setup, just play.</li>
-        <li><strong>Pro tip:</strong> Day one: wood → tools → stone gear. Easy win.</li>
-      </ul>
-      <p class="actions">
-        <a class="btn" href="https://classroom-6x-online.github.io/game/eaglercraft"><i>▶</i> Play now</a>
-      </p>
-    </article>
-
-    <!-- BitLife -->
-    <article class="game-card">
-      <h3 class="game-title"><span class="pill"><i>📖</i> Simulator</span>
-        <a href="https://classroom-6x-online.github.io/game/bitlife">BitLife – Life Simulator</a>
-      </h3>
-      <p class="game-desc">Choices, consequences, and wildly different endings—your story, your rules.</p>
-      <ul class="meta">
-        <li><strong>Gameplay:</strong> Pick careers, relationships, and risks; watch your life unfold.</li>
-        <li><strong>Why it’s fun:</strong> No two runs are alike—surprises around every decision.</li>
-        <li><strong>Pro tip:</strong> Mix “safe” and “chaos” paths to unlock rare ribbons.</li>
-      </ul>
-      <p class="actions">
-        <a class="btn" href="https://classroom-6x-online.github.io/game/bitlife"><i>▶</i> Play now</a>
-      </p>
-    </article>
-
-    <!-- Slope -->
-    <article class="game-card">
-      <h3 class="game-title"><span class="pill"><i>🌀</i> Runner</span>
-        <a href="https://classroom-6x-online.github.io/game/slope">Slope</a>
-      </h3>
-      <p class="game-desc">Neon speed-run with razor turns and sudden drops. Simple, but savage.</p>
-      <ul class="meta">
-        <li><strong>Gameplay:</strong> Guide the ball as the track gets faster and trickier.</li>
-        <li><strong>Why it’s fun:</strong> One key to start, fifty to master—perfect “one more try” loop.</li>
-        <li><strong>Pro tip:</strong> Look two tiles ahead; micro-adjusts > panic swerves.</li>
-      </ul>
-      <p class="actions">
-        <a class="btn" href="https://classroom-6x-online.github.io/game/slope"><i>▶</i> Play now</a>
-      </p>
-    </article>
-
-    <!-- Snow Rider 3D -->
-    <article class="game-card">
-      <h3 class="game-title"><span class="pill"><i>🛷</i> Endless</span>
-        <a href="https://classroom-6x-online.github.io/game/snow-rider-3d">Snow Rider 3D</a>
-      </h3>
-      <p class="game-desc">Carve down snowy hills, snag gifts, and thread the needle between trees.</p>
-      <ul class="meta">
-        <li><strong>Gameplay:</strong> Smooth sled physics + escalating obstacles.</li>
-        <li><strong>Why it’s fun:</strong> Chill vibe with sneaky difficulty—great for short breaks.</li>
-        <li><strong>Pro tip:</strong> Center lane buys time when vision’s cluttered.</li>
-      </ul>
-      <p class="actions">
-        <a class="btn" href="https://classroom-6x-online.github.io/game/snow-rider-3d"><i>▶</i> Play now</a>
-      </p>
-    </article>
-
-    <!-- Tomb of the Mask -->
-    <article class="game-card">
-      <h3 class="game-title"><span class="pill"><i>🧭</i> Arcade</span>
-        <a href="https://classroom-6x-online.github.io/game/tomb-of-the-mask">Tomb of the Mask</a>
-      </h3>
-      <p class="game-desc">Retro mazes, instant dashes, and traps that don’t play nice.</p>
-      <ul class="meta">
-        <li><strong>Gameplay:</strong> Swipe to zip through vertical levels full of hazards.</li>
-        <li><strong>Why it’s fun:</strong> Fast, snappy, and perfect for “one-minute” sessions.</li>
-        <li><strong>Pro tip:</strong> Clock enemy patterns; it’s free time on the next run.</li>
-      </ul>
-      <p class="actions">
-        <a class="btn" href="https://classroom-6x-online.github.io/game/tomb-of-the-mask"><i>▶</i> Play now</a>
-      </p>
-    </article>
-
-    <!-- Drift Hunters (replaces BuildNow GG) -->
-    <article class="game-card">
-      <h3 class="game-title"><span class="pill"><i>🏎️</i> Racing</span>
-        <a href="https://classroom-6x-online.github.io/game/drift-hunters">Drift Hunters</a>
-      </h3>
-      <p class="game-desc">Silky drift physics, long slides, big combos—tune it, then send it.</p>
-      <ul class="meta">
-        <li><strong>Gameplay:</strong> Chain drifts on open tracks, earn credits, upgrade your ride.</li>
-        <li><strong>Why it’s fun:</strong> Satisfying control and meaty car progression.</li>
-        <li><strong>Pro tip:</strong> Feather throttle mid-drift to hold angle without spinning.</li>
-      </ul>
-      <p class="actions">
-        <a class="btn" href="https://classroom-6x-online.github.io/game/drift-hunters"><i>▶</i> Play now</a>
-      </p>
-    </article>
-
-    <!-- Moto X3M (replaces Blockpost earlier) -->
-    <article class="game-card">
-      <h3 class="game-title"><span class="pill"><i>🏍️</i> Stunts</span>
-        <a href="https://classroom-6x-online.github.io/game/moto-x3m">Moto X3M</a>
-      </h3>
-      <p class="game-desc">Time-trial bike chaos—loops, bombs, and glorious near-miss landings.</p>
-      <ul class="meta">
-        <li><strong>Gameplay:</strong> Flip for speed, manage momentum, and squeeze 3-star times.</li>
-        <li><strong>Why it’s fun:</strong> Bite-size levels + crunchy physics = “just one more.”</li>
-        <li><strong>Pro tip:</strong> Micro-taps on rotate smooth out sketchy landings.</li>
-      </ul>
-      <p class="actions">
-        <a class="btn" href="https://classroom-6x-online.github.io/game/moto-x3m"><i>▶</i> Play now</a>
-      </p>
-    </article>
-
-    <!-- Geometry Dash Lite -->
-    <article class="game-card">
-      <h3 class="game-title"><span class="pill"><i>🎵</i> Rhythm</span>
-        <a href="https://classroom-6x-online.github.io/game/geometry-dash-lite">Geometry Dash Lite</a>
-      </h3>
-      <p class="game-desc">Beat-matched jumps and brutal checkpoints—rage… but the good kind.</p>
-      <ul class="meta">
-        <li><strong>Gameplay:</strong> Tap, fly, and flip with the music—clean inputs win.</li>
-        <li><strong>Why it’s fun:</strong> Bangers + tight timing = addictive loop.</li>
-        <li><strong>Pro tip:</strong> Practice mode to map problem spots before full clears.</li>
-      </ul>
-      <p class="actions">
-        <a class="btn" href="https://classroom-6x-online.github.io/game/geometry-dash-lite"><i>▶</i> Play now</a>
-      </p>
-    </article>
-
-    <!-- Monkey Mart -->
-    <article class="game-card">
-      <h3 class="game-title"><span class="pill"><i>🛒</i> Tycoon</span>
-        <a href="https://classroom-6x-online.github.io/game/monkey-mart">Monkey Mart</a>
-      </h3>
-      <p class="game-desc">Monkeys, markets, and mellow upgrades—light management with charm.</p>
-      <ul class="meta">
-        <li><strong>Gameplay:</strong> Grow crops, restock shelves, hire helpers, expand aisles.</li>
-        <li><strong>Why it’s fun:</strong> Cozy loop that steadily ramps productivity.</li>
-        <li><strong>Pro tip:</strong> Upgrade shelves early—it compounds your profits fast.</li>
-      </ul>
-      <p class="actions">
-        <a class="btn" href="https://classroom-6x-online.github.io/game/monkey-mart"><i>▶</i> Play now</a>
-      </p>
-    </article>
-  </div>
+<section>
+  <h2>Top 10 Classroom 6x Unblocked Games 6x</h2>
+  <ul>
+    <li>
+      <a href="https://classroom-6x-online.github.io/game/1v1-lol-unblocked.html">1v1.LOL</a> –
+      Build and shoot in fast 1v1 battles. Quick matchmaking and simple controls for instant action.
+    </li>
+    <li>
+      <a href="https://classroom-6x-online.github.io/game/eaglercraft.html">Eaglercraft</a> –
+      Minecraft-style sandbox in your browser. Build, mine, and survive with no downloads.
+    </li>
+    <li>
+      <a href="https://classroom-6x-online.github.io/game/bitlife.html">BitLife – Life Simulator</a> –
+      Text life sim where choices shape careers, relationships, and endings.
+    </li>
+    <li>
+      <a href="https://classroom-6x-online.github.io/game/slope.html">Slope</a> –
+      Roll a ball down neon slopes. Simple controls, sharp turns, and rising speed.
+    </li>
+    <li>
+      <a href="https://classroom-6x-online.github.io/game/snow-rider-3d.html">Snow Rider 3D</a> –
+      Sled down snowy hills, dodge obstacles, and collect gifts for high scores.
+    </li>
+    <li>
+      <a href="https://classroom-6x-online.github.io/game/tomb-of-the-mask.html">Tomb of the Mask</a> –
+      Dash through retro neon mazes packed with traps and enemies. Reflexes win.
+    </li>
+    <li>
+      <a href="https://classroom-6x-online.github.io/game/drift-hunters.html">Drift Hunters</a> –
+      3D drifting with smooth physics. Chain slides, earn credits, and upgrade cars.
+    </li>
+    <li>
+      <a href="https://classroom-6x-online.github.io/game/moto-x3m.html">Moto X3M</a> –
+      Bike stunt racer with loops, bombs, and tight timers. Flip, land, and chase stars.
+    </li>
+    <li>
+      <a href="https://classroom-6x-online.github.io/game/geometry-dash-lite.html">Geometry Dash Lite</a> –
+      Rhythm platformer; jump to the beat through tricky levels and spikes.
+    </li>
+    <li>
+      <a href="https://classroom-6x-online.github.io/game/monkey-mart.html">Monkey Mart</a> –
+      Cute tycoon—grow crops, stock shelves, and expand a monkey-run grocery store.
+    </li>
+  </ul>
 </section>
 
 
