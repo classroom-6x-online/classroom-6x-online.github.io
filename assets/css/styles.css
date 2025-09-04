@@ -96,6 +96,7 @@ header {
   padding: 0 15px;
   text-indent: 0;
   outline: none;
+  border-radius: 5px;
 }
 
 .icon-search {
