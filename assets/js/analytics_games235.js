@@ -30,18 +30,18 @@ function loadGoogleAnalytics(id) {
 
 window.addEventListener("load", (event) => {
   if (botBrowser()) {
-    loadGoogleAnalytics("G-Z3V7121CYN");
+    loadGoogleAnalytics("G-4BFZYL1PJW");
     console.log('Bot Browser', event);
   } else {
     console.log('Human Browser', event);
     if (window.location.href.indexOf(".games235.com")> -1) {
       if (inFrame()) {
-        loadGoogleAnalytics("G-Z3V7121CYN");
+        loadGoogleAnalytics("G-4BFZYL1PJW");
       } else {
-        loadGoogleAnalytics("G-Z3V7121CYN");
+        loadGoogleAnalytics("G-4BFZYL1PJW");
       }
     } else {
-        loadGoogleAnalytics("G-Z3V7121CYN");
+        loadGoogleAnalytics("G-4BFZYL1PJW");
     }
   }
 });
