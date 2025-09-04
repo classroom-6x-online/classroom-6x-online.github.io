@@ -17,6 +17,9 @@ a {
 @media (min-width: 1200px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0.5rem 1.2rem;
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    margin: 0.5rem;
   }
 }
 
